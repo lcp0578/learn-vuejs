@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>v-show</title>
+</head>
+<body>
+<div id="app">
+	<form action="">
+		<textarea name="" id="" cols="30" rows="10" v-model="message"></textarea>
+		<div class="error" v-show="!message">
+			error msg
+		</div>
+		<input type="submit" value="submit">
+	</form>
+</div>
+	<script src="dist/vue.min.js"></script>
+	<script>
+	new Vue({
+		el:'#app',
+		data: {
+			message: ''
+		}
+	})
+	</script>
+</body>
+</html>
